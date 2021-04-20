@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:id="@+id/ll0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/ll1"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintVertical_bias="1"
+    >
+                <TextView
+                android:id="@+id/ll0tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sz13"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                android:textAlignment="viewEnd"
+                android:singleLine="true"
+                    />
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/ll0"
+    app:layout_constraintBottom_toTopOf="@id/ll2"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintVertical_bias="0.5"
+        >
+
+            <EditText
+            android:id="@+id/ll1et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sz11"
+
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+             android:inputType="numberDecimal"
+             android:focusableInTouchMode="false"
+                />
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="7.0"
+    android:orientation="vertical"
+    android:background="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/ll1"
+    app:layout_constraintBottom_toTopOf="@id/ll3"
+    app:layout_constraintVertical_bias="1"
+
+        >
+        <LinearLayout
+            android:id="@+id/ll2r0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5.0"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/br0c0"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/sz8"
+                android:layout_weight="1"
+                android:src="@drawable/root"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+
+                />
+
+
+            <ImageButton
+                android:id="@+id/br0c1"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/sz8"
+                android:layout_weight="1"
+                android:src="@drawable/radian"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                />
+            <ImageButton
+                android:id="@+id/br0c2"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/sz8"
+                android:layout_weight="1"
+                android:src="@drawable/sin"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                />
+            <ImageButton
+                android:id="@+id/br0c3"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/sz8"
+                android:layout_weight="1"
+                android:src="@drawable/cos"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:scaleX="0.7"
+                android:scaleY="0.8"
+
+                />
+            <ImageButton
+                android:id="@+id/br0c4"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/sz8"
+                android:layout_weight="1"
+                android:src="@drawable/tan"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7.0"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ll2"
+        app:layout_constraintBottom_toTopOf="@id/ll4"
+        app:layout_constraintVertical_bias="1"
+
+        >
+
+    <LinearLayout
+        android:id="@+id/ll3r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.0"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/br1c0"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz8"
+            android:layout_weight="1"
+            android:src="@drawable/nroot"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+
+            />
+        <ImageButton
+            android:id="@+id/br1c1"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz8"
+            android:layout_weight="1"
+            android:src="@drawable/log"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+        <ImageButton
+            android:id="@+id/br1c2"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz8"
+            android:layout_weight="1"
+            android:src="@drawable/ln"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+        <ImageButton
+            android:id="@+id/br1c3"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz8"
+            android:layout_weight="1"
+            android:src="@drawable/lfbrac"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+        <ImageButton
+            android:id="@+id/br1c4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz8"
+            android:layout_weight="1"
+            android:src="@drawable/rfbrac"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7.0"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ll3"
+        app:layout_constraintBottom_toTopOf="@id/ll5"
+        app:layout_constraintVertical_bias="1"
+
+        >
+    <LinearLayout
+        android:id="@+id/ll4r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.0"
+        android:gravity="center"
+        >
+
+
+        <ImageButton
+            android:id="@+id/br2c0"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/inverse"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+
+        <ImageButton
+            android:id="@+id/br2c1"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/ac"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.8"
+            />
+        <ImageButton
+            android:id="@+id/br2c2"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/clr"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.8"
+
+            />
+        <ImageButton
+            android:id="@+id/br2c3"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/percentage"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.8"
+            />
+
+        <ImageButton
+            android:id="@+id/br2c4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/div"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.8"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7.0"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ll4"
+        app:layout_constraintBottom_toTopOf="@id/ll6"
+        app:layout_constraintVertical_bias="1"
+
+        >
+    <LinearLayout
+        android:id="@+id/ll5r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.0"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/br3c0"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/factorial"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+
+        <Button
+            android:id="@+id/br3c1_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="7"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br3c2_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="8"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br3c3_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="9"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/br3c4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/multiple"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.8"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7.0"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ll5"
+        app:layout_constraintBottom_toTopOf="@id/ll7"
+        app:layout_constraintVertical_bias="1"
+
+        >
+    <LinearLayout
+        android:id="@+id/ll6r4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.0"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/br4c0"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/xn"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+
+        <Button
+            android:id="@+id/br4c1_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="4"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br4c2_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="5"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br4c3_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="6"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/br4c4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/minus"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.4"
+            android:scaleY="0.25"
+
+
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7.0"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ll6"
+        app:layout_constraintBottom_toTopOf="@id/ll8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="1"
+
+        >
+
+    <LinearLayout
+        android:id="@+id/ll7r5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.0"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/br5c0"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/ex"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+        <Button
+            android:id="@+id/br5c1_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="1"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br5c2_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="2"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br5c3_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="3"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/br5c4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/plus"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.8"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7.0"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ll7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1"
+        >
+    <LinearLayout
+        android:id="@+id/ll8r6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.0"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/br6c0"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/pi"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            />
+        <Button
+            android:id="@+id/br6c1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="e"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br6c2_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="0"
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <Button
+            android:id="@+id/br6c3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:text="."
+            android:textSize="@dimen/bsz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:background="@color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/br6c4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/sz12"
+            android:layout_weight="1"
+            android:src="@drawable/equal"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

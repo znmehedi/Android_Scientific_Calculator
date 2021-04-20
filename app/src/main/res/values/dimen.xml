@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="primary">1dp</dimen>
+    <dimen name="rbsz">20dp</dimen>
+    <dimen name="bsz">50dp</dimen>
+    <dimen name="bsz1">30dp</dimen>
+    <dimen name="sz1">10dp</dimen>
+    <dimen name="sz2">15dp</dimen>
+    <dimen name="sz3">20dp</dimen>
+    <dimen name="sz4">25dp</dimen>
+    <dimen name="sz5">30dp</dimen>
+    <dimen name="sz6">35dp</dimen>
+    <dimen name="sz7">40dp</dimen>
+    <dimen name="sz8">45dp</dimen>
+    <dimen name="sz9">50dp</dimen>
+    <dimen name="sz10">55dp</dimen>
+    <dimen name="sz11">60dp</dimen>
+    <dimen name="sz12">60dp</dimen>
+    <dimen name="sz13">70dp</dimen>
+    <dimen name="sz14">75dp</dimen>
+    <dimen name="sz15">80dp</dimen>
+    <dimen name="sz16">85dp</dimen>
+    <dimen name="sz17">90dp</dimen>
+    <dimen name="sz18">95dp</dimen>
+    <dimen name="sz19">100dp</dimen>
+    <dimen name="sz20">200dp</dimen>
+    <dimen name="sz21">150dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="sz22">5dp</dimen>
+    <dimen name="edittext">200dp</dimen>
+    <dimen name="txtview">150dp</dimen>
+
+</resources>
